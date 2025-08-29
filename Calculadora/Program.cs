@@ -12,6 +12,8 @@ namespace Calculadora
         /// Punto de entrada principal para la aplicación.
         /// </summary>
         [STAThread]
+
+        //inicia el programa
         static void Main()
         {
             Application.EnableVisualStyles();
