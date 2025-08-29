@@ -28,13 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Nombre = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(30, 116);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(119, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Enviar mensaje";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Nombre
+            // 
+            this.Nombre.Location = new System.Drawing.Point(30, 62);
+            this.Nombre.Name = "Nombre";
+            this.Nombre.Size = new System.Drawing.Size(100, 22);
+            this.Nombre.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(36, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(56, 16);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Nombre";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Nombre);
+            this.Controls.Add(this.button1);
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Inicio";
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox Nombre;
+        private System.Windows.Forms.Label label1;
     }
 }
 
