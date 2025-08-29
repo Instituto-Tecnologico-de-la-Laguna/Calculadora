@@ -16,5 +16,20 @@ namespace Calculadora
         {
             InitializeComponent();
         }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            int num1, num2, resultado;
+
+            num1=Convert.ToInt32(txtValor1.Text);
+            num2 = int.Parse(txtValor2.Text);
+            resultado = num1 + num2;
+            MessageBox.Show("El resultado es: "+resultado.ToString(),
+                "Sistema",MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            txtValor1.Clear();
+            txtValor2.Clear();
+            txtValor1.Focus();
+        }
     }
 }

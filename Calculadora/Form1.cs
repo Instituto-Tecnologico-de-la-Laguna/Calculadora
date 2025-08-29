@@ -15,11 +15,27 @@ namespace Calculadora
         public Form1()
         {
             InitializeComponent();
+            SetDisplayRectLocation(1200, 360);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            label1.Text = "Hola mundo";
+
+            DialogResult resultado = MessageBox.Show("Tu nombre es: " + txtNombre.Text, "Sistema", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (resultado == DialogResult.OK) {
+                MessageBox.Show("Tu nombre es correcto");
+                txtNombre.Clear();
+                txtNombre.Focus();
+            } else {
+                this.Close();
+            }
+            
+        }
+        
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
