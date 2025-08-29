@@ -28,13 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.Mensage = new System.Windows.Forms.Button();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // Mensage
+            // 
+            this.Mensage.Location = new System.Drawing.Point(83, 91);
+            this.Mensage.Name = "Mensage";
+            this.Mensage.Size = new System.Drawing.Size(162, 42);
+            this.Mensage.TabIndex = 2;
+            this.Mensage.Text = "Enviar mensage";
+            this.Mensage.UseVisualStyleBackColor = true;
+            this.Mensage.Click += new System.EventHandler(this.Mensage_Click);
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(83, 65);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(162, 20);
+            this.txtNombre.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(83, 46);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Texto";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(335, 197);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.Mensage);
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button Mensage;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.Label label1;
     }
 }
 
