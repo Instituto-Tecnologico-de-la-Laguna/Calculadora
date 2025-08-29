@@ -16,5 +16,27 @@ namespace Calculadora
         {
             InitializeComponent();
         }
+
+        
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            DialogResult Resultado = MessageBox.Show("Tu nombre es: " + txtNombre.Text, "Sistema", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (Resultado == DialogResult.OK)
+            {
+                MessageBox.Show("Tu Nombre es correcto", "Sistema", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                txtNombre.Clear();
+                txtNombre.Focus();
+            }
+            else
+            {
+                this.Close();
+            }
+
+
+        //  MessageBox.Show("HolaMundo", "Sistemas", MessageBoxButtons.OKCancel,MessageBoxIcon.Information);
+        
+        }
     }
 }
