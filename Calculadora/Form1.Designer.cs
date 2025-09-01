@@ -56,7 +56,7 @@
             this.label1.Location = new System.Drawing.Point(41, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 20);
-            this.label1.TabIndex = 2;
+            this.label1.TabIndex = 3;
             this.label1.Text = "Nombre";
             // 
             // Form1
