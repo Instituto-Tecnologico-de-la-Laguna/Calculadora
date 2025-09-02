@@ -19,11 +19,18 @@ namespace Calculadora
 
         private void btCalcular_Click(object sender, EventArgs e)
         {
-            int numero1, numero2, resultado;
-            numero1 = Convert.ToInt32(tbValor1.Text);
-            numero2 = int.Parse(tbValor2.Text);
-
-            resultado = numero1 + numero2;
+            decimal numero1, numero2, resultado;
+            try
+            {
+                numero1 = Convert.ToDecimal(tbValor1.Text);
+                numero2 = decimal.Parse(tbValor2.Text);
+                resultado = numero1 + numero2;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             MessageBox.Show("El resultado es: " + resultado.ToString(), "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
             tbValor1.Clear();
