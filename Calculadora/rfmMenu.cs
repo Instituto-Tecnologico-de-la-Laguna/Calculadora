@@ -39,5 +39,11 @@ namespace Calculadora
             Form1 f1=new Form1();
             f1.Show();
         }
+
+        private void editorDeTextoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frnEditor editor=new frnEditor();
+            editor.Show();
+        }
     }
 }
