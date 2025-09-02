@@ -37,6 +37,7 @@
             this.temporizadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sumaDe2NumerosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helloWordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,10 +73,11 @@
             this.appToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.temporizadorToolStripMenuItem,
             this.sumaDe2NumerosToolStripMenuItem,
-            this.helloWordToolStripMenuItem});
+            this.helloWordToolStripMenuItem,
+            this.editorToolStripMenuItem});
             this.appToolStripMenuItem.Name = "appToolStripMenuItem";
-            this.appToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
-            this.appToolStripMenuItem.Text = "App";
+            this.appToolStripMenuItem.Size = new System.Drawing.Size(61, 24);
+            this.appToolStripMenuItem.Text = " Apps";
             // 
             // temporizadorToolStripMenuItem
             // 
@@ -97,6 +99,13 @@
             this.helloWordToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.helloWordToolStripMenuItem.Text = "Hello Word";
             this.helloWordToolStripMenuItem.Click += new System.EventHandler(this.helloWordToolStripMenuItem_Click);
+            // 
+            // editorToolStripMenuItem
+            // 
+            this.editorToolStripMenuItem.Name = "editorToolStripMenuItem";
+            this.editorToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.editorToolStripMenuItem.Text = "Editor De Texto";
+            this.editorToolStripMenuItem.Click += new System.EventHandler(this.editorToolStripMenuItem_Click);
             // 
             // frmMenu
             // 
@@ -123,5 +132,6 @@
         private System.Windows.Forms.ToolStripMenuItem sumaDe2NumerosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helloWordToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editorToolStripMenuItem;
     }
 }
