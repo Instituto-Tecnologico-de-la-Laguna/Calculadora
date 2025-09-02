@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Calculadora;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -38,6 +39,12 @@ namespace Aplicacion2
         {
             Form3 temporizador = new Form3();
             temporizador.Show();
+        }
+
+        private void editorDeTextoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmEditor editor = new FrmEditor();
+            editor.Show();  
         }
     }
 }

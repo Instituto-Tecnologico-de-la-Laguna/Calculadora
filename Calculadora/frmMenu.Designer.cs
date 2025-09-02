@@ -35,6 +35,7 @@
             this.calcuadoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.holaMundoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.temporizadorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.editorDeTextoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,7 +63,7 @@
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(145, 34);
             this.salirToolStripMenuItem.Text = "salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -71,7 +72,8 @@
             this.calculadoraToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.calcuadoraToolStripMenuItem,
             this.holaMundoToolStripMenuItem1,
-            this.temporizadorToolStripMenuItem1});
+            this.temporizadorToolStripMenuItem1,
+            this.editorDeTextoToolStripMenuItem});
             this.calculadoraToolStripMenuItem.Name = "calculadoraToolStripMenuItem";
             this.calculadoraToolStripMenuItem.Size = new System.Drawing.Size(73, 29);
             this.calculadoraToolStripMenuItem.Text = "Menu";
@@ -96,6 +98,13 @@
             this.temporizadorToolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
             this.temporizadorToolStripMenuItem1.Text = "Temporizador";
             this.temporizadorToolStripMenuItem1.Click += new System.EventHandler(this.temporizadorToolStripMenuItem1_Click_1);
+            // 
+            // editorDeTextoToolStripMenuItem
+            // 
+            this.editorDeTextoToolStripMenuItem.Name = "editorDeTextoToolStripMenuItem";
+            this.editorDeTextoToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.editorDeTextoToolStripMenuItem.Text = "Editor de texto";
+            this.editorDeTextoToolStripMenuItem.Click += new System.EventHandler(this.editorDeTextoToolStripMenuItem_Click);
             // 
             // frmMenu
             // 
@@ -122,5 +131,6 @@
         private System.Windows.Forms.ToolStripMenuItem calcuadoraToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem holaMundoToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem temporizadorToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem editorDeTextoToolStripMenuItem;
     }
 }
