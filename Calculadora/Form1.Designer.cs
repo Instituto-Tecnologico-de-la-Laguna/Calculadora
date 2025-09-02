@@ -1,4 +1,4 @@
-﻿namespace Calculadora
+﻿namespace Aplicacion2
 {
     partial class Form1
     {
@@ -29,30 +29,58 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
+            this.txt = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(688, 12);
+            this.button1.Location = new System.Drawing.Point(65, 133);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 58);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button";
+            this.button1.Size = new System.Drawing.Size(207, 73);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Continuar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txt
+            // 
+            this.txt.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.txt.Location = new System.Drawing.Point(65, 87);
+            this.txt.Name = "txt";
+            this.txt.Size = new System.Drawing.Size(207, 26);
+            this.txt.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(61, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(69, 20);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Nombre:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(359, 263);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txt);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txt;
+        private System.Windows.Forms.Label label1;
     }
 }
 
