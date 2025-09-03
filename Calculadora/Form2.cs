@@ -19,13 +19,22 @@ namespace Calculadora
 
         private void sumarval_Click(object sender, EventArgs e)
         {
-            int numero1, numero2, resultado;
-            numero1 = Convert.ToInt32(textValor1.Text);   
-            numero2 = int.Parse(textValor2.Text);
+            decimal numero1, numero2, resultado;
 
-            resultado = numero1 + numero2;
-            MessageBox.Show("El resultado de la suma es: " + resultado.ToString(), "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            try
+            {
+                numero1 = Convert.ToDecimal(textValor1.Text);
+                numero2 = decimal.Parse(textValor2.Text);
 
+                resultado = numero1 + numero2;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            MessageBox.Show("El resultado es: " + resultado.ToString(), "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
             textValor1.Clear(); 
             textValor2.Clear();
             textValor1.Focus();
