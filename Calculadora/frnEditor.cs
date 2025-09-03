@@ -13,6 +13,7 @@ namespace Calculadora
 {
     public partial class frnEditor : Form
     {
+        bool guardado = false;
         public frnEditor()
         {
             InitializeComponent();
@@ -43,12 +44,42 @@ namespace Calculadora
 
         private void guardarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            sfdGuardar.ShowDialog();
+            DialogResult guardar;
+            if (guardado==false)
+            {
+                if (sfdGuardar.ShowDialog()==DialogResult.OK)
+                {
+                    richTextBox1.SaveFile(sfdGuardar.FileName, RichTextBoxStreamType.PlainText);
+                    guardado = true;
+                }
+
+            }
+            else
+            {
+                richTextBox1.SaveFile(sfdGuardar.FileName,RichTextBoxStreamType.PlainText);
+            }
+                
+        
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
 
+        private void guardarComoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void fuenteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fontDialog1.ShowDialog();
+        }
+
+        private void colorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            colorDialog1.ShowDialog();
         }
     }
 }
