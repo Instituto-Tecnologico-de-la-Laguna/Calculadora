@@ -39,5 +39,11 @@ namespace Calculadora
         {
             this.Close();
         }
+
+        private void editorDeTextoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmEditor editor= new frmEditor();
+            editor.Show();
+        }
     }
 }
