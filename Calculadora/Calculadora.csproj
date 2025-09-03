@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,16 +47,52 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FmrEditor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FmrEditor.Designer.cs">
+      <DependentUpon>FmrEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmrSuma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmrSuma.Designer.cs">
+      <DependentUpon>fmrSuma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmrTimers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmrTimers.Designer.cs">
+      <DependentUpon>fmrTimers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmrMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmrMenu.Designer.cs">
+      <DependentUpon>fmrMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmrEnviar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmrEnviar.Designer.cs">
+      <DependentUpon>fmrEnviar.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FmrEditor.resx">
+      <DependentUpon>FmrEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmrMenu.resx">
+      <DependentUpon>fmrMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmrTimers.resx">
+      <DependentUpon>fmrTimers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmrSuma.resx">
+      <DependentUpon>fmrSuma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmrEnviar.resx">
+      <DependentUpon>fmrEnviar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
