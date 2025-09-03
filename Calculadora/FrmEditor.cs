@@ -13,6 +13,7 @@ namespace Calculadora
 {
     public partial class FrmEditor : Form
     {
+        bool guardado = false;
         public FrmEditor()
         {
             InitializeComponent();
@@ -25,19 +26,34 @@ namespace Calculadora
 
         private void abrirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DialogResult abrir;
-            abrir = oFDAbrir.ShowDialog();
-            if (abrir == DialogResult.OK)
+            DialogResult guardar;
+            if (guardado == false)
             {
-                String texto = File.ReadAllText(oFDAbrir.FileName);
-                rTBEditor.Text = texto;
+                if (sFDGuardar.ShowDialog() == DialogResult.OK)
+                {
+                    rTBEditor.SaveFile(sFDGuardar.FileName, RichTextBoxStreamType.PlainText);
+                    guardado = true;
+                }
+                
+            } else
+            {
+                rTBEditor.SaveFile(sFDGuardar.FileName, RichTextBoxStreamType.PlainText);
             }
+
 
         }
 
         private void guardarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            sFDGuardar.ShowDialog();  
+            DialogResult guardar;
+            guardar = sFDGuardar.ShowDialog();
+            if (guardar == DialogResult.OK)
+            {
+                rTBEditor.SaveFile(sFDGuardar.FileName, RichTextBoxStreamType.PlainText);
+
+            }
+            
+
         }
 
         private void imprimirToolStripMenuItem_Click(object sender, EventArgs e)
@@ -48,6 +64,22 @@ namespace Calculadora
         private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             rTBEditor.Clear();
+            guardado = false;
+        }
+
+        private void guardarComoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fuenteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fDFuente.ShowDialog();
+        }
+
+        private void colorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cDColor.ShowDialog();  
         }
     }
 }
