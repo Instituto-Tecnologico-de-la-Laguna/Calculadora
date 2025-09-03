@@ -13,6 +13,7 @@ namespace Calculadora
 {
     public partial class frmEditor : Form
     {
+        bool guardado = false;
         public frmEditor()
         {   
             InitializeComponent();
@@ -33,12 +34,40 @@ namespace Calculadora
 
         private void guardarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            sfdGuardar.ShowDialog();
+            DialogResult guardar;
+           
+           
+
+            if (guardado==false)
+            {
+                if (sfdGuardar.ShowDialog() == DialogResult.OK)
+                {
+                    rtbEditor.SaveFile(sfdGuardar.FileName, RichTextBoxStreamType.PlainText);
+
+                    guardado = true;
+
+                    //string texto=rtbEditor.Text;
+                    // File.WriteAllText(sfdGuardar.FileName, texto);
+                }
+            }
+            else 
+            {
+                rtbEditor.SaveFile(sfdGuardar.FileName,RichTextBoxStreamType.PlainText);
+            }
+            
         }
 
         private void guartdarComoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            sfdGuardar.ShowDialog();
+            if (sfdGuardar.ShowDialog() == DialogResult.OK)
+            {
+                rtbEditor.SaveFile(sfdGuardar.FileName, RichTextBoxStreamType.PlainText);
+
+                guardado = true;
+
+                //string texto=rtbEditor.Text;
+                // File.WriteAllText(sfdGuardar.FileName, texto);
+            }
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
@@ -49,6 +78,18 @@ namespace Calculadora
         private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             rtbEditor.Clear();
+            guardado = false;
+
+        }
+
+        private void fuenteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fdFuente.ShowDialog();  
+        }
+
+        private void colorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cdColor.ShowDialog();
         }
     }
 }
