@@ -36,6 +36,7 @@
             this.sumaDe2NumerosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helloWorldToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.agendaTelefonicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,7 +74,8 @@
             this.temporizadorToolStripMenuItem,
             this.sumaDe2NumerosToolStripMenuItem,
             this.helloWorldToolStripMenuItem,
-            this.editorToolStripMenuItem});
+            this.editorToolStripMenuItem,
+            this.agendaTelefonicaToolStripMenuItem});
             this.appsToolStripMenuItem.Name = "appsToolStripMenuItem";
             this.appsToolStripMenuItem.Size = new System.Drawing.Size(70, 29);
             this.appsToolStripMenuItem.Text = "Apps";
@@ -106,6 +108,13 @@
             this.editorToolStripMenuItem.Text = "Editor";
             this.editorToolStripMenuItem.Click += new System.EventHandler(this.editorToolStripMenuItem_Click);
             // 
+            // agendaTelefonicaToolStripMenuItem
+            // 
+            this.agendaTelefonicaToolStripMenuItem.Name = "agendaTelefonicaToolStripMenuItem";
+            this.agendaTelefonicaToolStripMenuItem.Size = new System.Drawing.Size(274, 34);
+            this.agendaTelefonicaToolStripMenuItem.Text = "Agenda Telefonica";
+            this.agendaTelefonicaToolStripMenuItem.Click += new System.EventHandler(this.agendaTelefonicaToolStripMenuItem_Click);
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -132,5 +141,6 @@
         private System.Windows.Forms.ToolStripMenuItem sumaDe2NumerosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helloWorldToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem agendaTelefonicaToolStripMenuItem;
     }
 }
