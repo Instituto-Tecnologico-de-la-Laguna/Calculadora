@@ -45,5 +45,11 @@ namespace Calculadora
             frnEditor editor=new frnEditor();
             editor.Show();
         }
+
+        private void agendaTelefonicaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frnAgenda agenda=new frnAgenda();
+            agenda.Show();
+        }
     }
 }
