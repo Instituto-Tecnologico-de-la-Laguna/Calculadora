@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-<<<<<<< HEAD
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -49,7 +48,6 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
-=======
             this.btnMensaje = new System.Windows.Forms.Button();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -92,7 +90,6 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
->>>>>>> master
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -100,11 +97,8 @@
 
         #endregion
 
-<<<<<<< HEAD
-=======
         private System.Windows.Forms.Button btnMensaje;
         private System.Windows.Forms.TextBox txtNombre;
->>>>>>> master
         private System.Windows.Forms.Label label1;
     }
 }
