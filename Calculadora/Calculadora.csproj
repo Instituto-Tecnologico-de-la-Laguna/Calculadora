@@ -34,6 +34,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -47,51 +50,62 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Formularios\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Formularios\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="Formularios\Form2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
+    <Compile Include="Formularios\Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="FRMEditor.cs">
+    <Compile Include="Formularios\FrmAgenda.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FRMEditor.Designer.cs">
+    <Compile Include="Formularios\FrmAgenda.Designer.cs">
+      <DependentUpon>FrmAgenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FRMEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FRMEditor.Designer.cs">
       <DependentUpon>FRMEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmMenus.cs">
+    <Compile Include="Formularios\FrmMenus.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMenus.Designer.cs">
+    <Compile Include="Formularios\FrmMenus.Designer.cs">
       <DependentUpon>FrmMenus.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmTimers.cs">
+    <Compile Include="Formularios\FrmTimers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmTimers.Designer.cs">
+    <Compile Include="Formularios\FrmTimers.Designer.cs">
       <DependentUpon>FrmTimers.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
+    <Compile Include="Utilidades\BaseDatosJson.cs" />
+    <Compile Include="Utilidades\Persona.cs" />
+    <EmbeddedResource Include="Formularios\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
+    <EmbeddedResource Include="Formularios\Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FRMEditor.resx">
+    <EmbeddedResource Include="Formularios\FrmAgenda.resx">
+      <DependentUpon>FrmAgenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FRMEditor.resx">
       <DependentUpon>FRMEditor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMenus.resx">
+    <EmbeddedResource Include="Formularios\FrmMenus.resx">
       <DependentUpon>FrmMenus.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmTimers.resx">
+    <EmbeddedResource Include="Formularios\FrmTimers.resx">
       <DependentUpon>FrmTimers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -103,6 +117,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -116,5 +131,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
