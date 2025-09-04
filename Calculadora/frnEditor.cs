@@ -69,7 +69,14 @@ namespace Calculadora
 
         private void guardarComoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            if (sfdGuardar.ShowDialog() == DialogResult.OK)
+            {
+                richTextBox1.SaveFile(sfdGuardar.FileName,
+                RichTextBoxStreamType.PlainText);
+                guardado = true;
+                /*string texto = rtbEditor.Text;
+                File.WriteAllText(sfdGuardar.FileName, texto);*/
+            }
         }
 
         private void fuenteToolStripMenuItem_Click(object sender, EventArgs e)
