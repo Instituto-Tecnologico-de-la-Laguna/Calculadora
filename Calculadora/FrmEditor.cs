@@ -26,6 +26,33 @@ namespace Calculadora
 
         private void abrirToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            DialogResult abrir;
+            abrir = oFDAbrir.ShowDialog();
+            if (abrir == DialogResult.OK)
+            {
+                rTBEditor.LoadFile(oFDAbrir.FileName,
+                    RichTextBoxStreamType.PlainText);
+            }
+            /*if (oFDAbrir.ShowDialog() == DialogResult.OK)
+            {
+
+                String rutaArch = oFDAbrir.FileName;
+
+                try
+                {
+                    String texto = File.ReadAllText(rutaArch);
+
+                    rTBEditor.Text = texto;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al abrir el archivo: " + ex.Message);
+                }
+            }*/
+        }
+
+        private void guardarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             DialogResult guardar;
             if (guardado == false)
             {
@@ -34,25 +61,13 @@ namespace Calculadora
                     rTBEditor.SaveFile(sFDGuardar.FileName, RichTextBoxStreamType.PlainText);
                     guardado = true;
                 }
-                
-            } else
+
+            }
+            else
             {
                 rTBEditor.SaveFile(sFDGuardar.FileName, RichTextBoxStreamType.PlainText);
             }
 
-
-        }
-
-        private void guardarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            DialogResult guardar;
-            guardar = sFDGuardar.ShowDialog();
-            if (guardar == DialogResult.OK)
-            {
-                rTBEditor.SaveFile(sFDGuardar.FileName, RichTextBoxStreamType.PlainText);
-
-            }
-            
 
         }
 
