@@ -36,13 +36,13 @@
             this.guardarComoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imprimirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fuenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rTBEditor = new System.Windows.Forms.RichTextBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.sFDGuardar = new System.Windows.Forms.SaveFileDialog();
             this.oFDAbrir = new System.Windows.Forms.OpenFileDialog();
-            this.editorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fuenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.colorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fDFuente = new System.Windows.Forms.FontDialog();
             this.cDColor = new System.Windows.Forms.ColorDialog();
             this.menuStrip1.SuspendLayout();
@@ -57,7 +57,7 @@
             this.editorToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 36);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -71,7 +71,7 @@
             this.imprimirToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.mnEditor.Name = "mnEditor";
-            this.mnEditor.Size = new System.Drawing.Size(88, 29);
+            this.mnEditor.Size = new System.Drawing.Size(88, 32);
             this.mnEditor.Text = "Archivo";
             // 
             // nuevoToolStripMenuItem
@@ -116,12 +116,35 @@
             this.salirToolStripMenuItem.Text = "&Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.imprimirToolStripMenuItem_Click);
             // 
+            // editorToolStripMenuItem
+            // 
+            this.editorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fuenteToolStripMenuItem,
+            this.colorToolStripMenuItem});
+            this.editorToolStripMenuItem.Name = "editorToolStripMenuItem";
+            this.editorToolStripMenuItem.Size = new System.Drawing.Size(75, 32);
+            this.editorToolStripMenuItem.Text = "Editor";
+            // 
+            // fuenteToolStripMenuItem
+            // 
+            this.fuenteToolStripMenuItem.Name = "fuenteToolStripMenuItem";
+            this.fuenteToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.fuenteToolStripMenuItem.Text = "Fuente";
+            this.fuenteToolStripMenuItem.Click += new System.EventHandler(this.fuenteToolStripMenuItem_Click);
+            // 
+            // colorToolStripMenuItem
+            // 
+            this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
+            this.colorToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.colorToolStripMenuItem.Text = "Color";
+            this.colorToolStripMenuItem.Click += new System.EventHandler(this.colorToolStripMenuItem_Click);
+            // 
             // rTBEditor
             // 
             this.rTBEditor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rTBEditor.Location = new System.Drawing.Point(0, 33);
+            this.rTBEditor.Location = new System.Drawing.Point(0, 36);
             this.rTBEditor.Name = "rTBEditor";
-            this.rTBEditor.Size = new System.Drawing.Size(800, 417);
+            this.rTBEditor.Size = new System.Drawing.Size(800, 414);
             this.rTBEditor.TabIndex = 1;
             this.rTBEditor.Text = "";
             // 
@@ -142,29 +165,6 @@
             // 
             this.oFDAbrir.FileName = "openFileDialog1";
             this.oFDAbrir.Filter = "Archivos de Texto|*.txt";
-            // 
-            // editorToolStripMenuItem
-            // 
-            this.editorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fuenteToolStripMenuItem,
-            this.colorToolStripMenuItem});
-            this.editorToolStripMenuItem.Name = "editorToolStripMenuItem";
-            this.editorToolStripMenuItem.Size = new System.Drawing.Size(75, 29);
-            this.editorToolStripMenuItem.Text = "Editor";
-            // 
-            // fuenteToolStripMenuItem
-            // 
-            this.fuenteToolStripMenuItem.Name = "fuenteToolStripMenuItem";
-            this.fuenteToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.fuenteToolStripMenuItem.Text = "Fuente";
-            this.fuenteToolStripMenuItem.Click += new System.EventHandler(this.fuenteToolStripMenuItem_Click);
-            // 
-            // colorToolStripMenuItem
-            // 
-            this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
-            this.colorToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.colorToolStripMenuItem.Text = "Color";
-            this.colorToolStripMenuItem.Click += new System.EventHandler(this.colorToolStripMenuItem_Click);
             // 
             // FrmEditor
             // 

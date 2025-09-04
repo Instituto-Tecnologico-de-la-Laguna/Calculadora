@@ -84,17 +84,30 @@ namespace Calculadora
 
         private void guardarComoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            if (sFDGuardar.ShowDialog() == DialogResult.OK)
+            {
+                rTBEditor.SaveFile(sFDGuardar.FileName,
+                RichTextBoxStreamType.PlainText);
+                guardado = true;
+                /*string texto = rtbEditor.Text;
+                File.WriteAllText(sfdGuardar.FileName, texto);*/
+            }
         }
 
         private void fuenteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            fDFuente.ShowDialog();
+            if(fDFuente.ShowDialog() == DialogResult.OK)
+            {
+                rTBEditor.Font = fDFuente.Font; 
+            }
         }
 
         private void colorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            cDColor.ShowDialog();  
+            if(cDColor.ShowDialog() == DialogResult.OK)
+            {
+                rTBEditor.ForeColor = cDColor.Color;
+            }
         }
     }
 }
