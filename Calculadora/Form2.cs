@@ -17,22 +17,30 @@ namespace Calculadora
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnCalcular_Click_1(object sender, EventArgs e)
         {
+
+            decimal numero1, numero2, resultado;
+            try
+            {
+                numero1 = Convert.ToDecimal(txtValor1.Text);
+                numero2 = decimal.Parse(txtValor2.Text);
+                resultado = numero1 + numero2;
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error:" + ex.Message, "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            MessageBox.Show("El resultado es: " + resultado.ToString(),
+                "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            txtValor1.Clear();
+            txtValor2.Clear();
+            txtValor1.Focus();
 
         }
 
-        private void Calcular_Click(object sender, EventArgs e)
-        {
-            int num1, num2, resultado;
-            num1 = Convert.ToInt32(Valor1.Text);
-            num2 = int.Parse(Valor2.Text);
-            resultado = num1 + num2;
-
-            MessageBox.Show("El resultado es = " + resultado.ToString(), "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Valor1.Clear();
-            Valor2.Clear();
-            Valor1.Focus();
-        }
     }
-}
+    }

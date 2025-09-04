@@ -28,69 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Valor1 = new System.Windows.Forms.TextBox();
-            this.Valor2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Calcular = new System.Windows.Forms.Button();
+            this.txtValor2 = new System.Windows.Forms.TextBox();
+            this.txtValor1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnCalcular = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // Valor1
+            // txtValor2
             // 
-            this.Valor1.Location = new System.Drawing.Point(116, 129);
-            this.Valor1.Name = "Valor1";
-            this.Valor1.Size = new System.Drawing.Size(100, 22);
-            this.Valor1.TabIndex = 0;
+            this.txtValor2.Location = new System.Drawing.Point(88, 190);
+            this.txtValor2.Name = "txtValor2";
+            this.txtValor2.Size = new System.Drawing.Size(100, 22);
+            this.txtValor2.TabIndex = 0;
             // 
-            // Valor2
+            // txtValor1
             // 
-            this.Valor2.Location = new System.Drawing.Point(119, 227);
-            this.Valor2.Name = "Valor2";
-            this.Valor2.Size = new System.Drawing.Size(100, 22);
-            this.Valor2.TabIndex = 1;
+            this.txtValor1.Location = new System.Drawing.Point(88, 116);
+            this.txtValor1.Name = "txtValor1";
+            this.txtValor1.Size = new System.Drawing.Size(100, 22);
+            this.txtValor1.TabIndex = 1;
             // 
-            // label1
+            // label3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(116, 68);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 16);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Valor 1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(88, 77);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(61, 20);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Valor 1";
             // 
-            // label2
+            // label4
             // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(116, 184);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 16);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Valor 2";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(88, 168);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(61, 20);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Valor 2";
             // 
-            // Calcular
+            // btnCalcular
             // 
-            this.Calcular.Location = new System.Drawing.Point(377, 176);
-            this.Calcular.Name = "Calcular";
-            this.Calcular.Size = new System.Drawing.Size(75, 23);
-            this.Calcular.TabIndex = 4;
-            this.Calcular.Text = "Calcular";
-            this.Calcular.UseVisualStyleBackColor = true;
-            this.Calcular.Click += new System.EventHandler(this.Calcular_Click);
+            this.btnCalcular.Location = new System.Drawing.Point(258, 150);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(75, 23);
+            this.btnCalcular.TabIndex = 4;
+            this.btnCalcular.Text = "Calcular";
+            this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click_1);
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Calcular);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.Valor2);
-            this.Controls.Add(this.Valor1);
+            this.ClientSize = new System.Drawing.Size(752, 433);
+            this.Controls.Add(this.btnCalcular);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtValor1);
+            this.Controls.Add(this.txtValor2);
             this.Name = "Form2";
-            this.Text = "Form2";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -103,5 +98,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button Calcular;
+        private System.Windows.Forms.TextBox txtValor2;
+        private System.Windows.Forms.TextBox txtValor1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnCalcular;
     }
 }
