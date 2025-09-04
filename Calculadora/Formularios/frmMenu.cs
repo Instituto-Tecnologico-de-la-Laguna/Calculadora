@@ -46,5 +46,11 @@ namespace Aplicacion2
             FrmEditor editor = new FrmEditor();
             editor.Show();  
         }
+
+        private void agendaTeléfonoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAgenda agenda = new frmAgenda(); 
+            agenda.Show();  
+        }
     }
 }

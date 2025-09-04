@@ -36,6 +36,7 @@
             this.holaMundoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.temporizadorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.editorDeTextoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.agendaTeléfonoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,7 +74,8 @@
             this.calcuadoraToolStripMenuItem,
             this.holaMundoToolStripMenuItem1,
             this.temporizadorToolStripMenuItem1,
-            this.editorDeTextoToolStripMenuItem});
+            this.editorDeTextoToolStripMenuItem,
+            this.agendaTeléfonoToolStripMenuItem});
             this.calculadoraToolStripMenuItem.Name = "calculadoraToolStripMenuItem";
             this.calculadoraToolStripMenuItem.Size = new System.Drawing.Size(73, 29);
             this.calculadoraToolStripMenuItem.Text = "Menu";
@@ -106,6 +108,13 @@
             this.editorDeTextoToolStripMenuItem.Text = "Editor de texto";
             this.editorDeTextoToolStripMenuItem.Click += new System.EventHandler(this.editorDeTextoToolStripMenuItem_Click);
             // 
+            // agendaTeléfonoToolStripMenuItem
+            // 
+            this.agendaTeléfonoToolStripMenuItem.Name = "agendaTeléfonoToolStripMenuItem";
+            this.agendaTeléfonoToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.agendaTeléfonoToolStripMenuItem.Text = "Agenda teléfono";
+            this.agendaTeléfonoToolStripMenuItem.Click += new System.EventHandler(this.agendaTeléfonoToolStripMenuItem_Click);
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -132,5 +141,6 @@
         private System.Windows.Forms.ToolStripMenuItem holaMundoToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem temporizadorToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem editorDeTextoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem agendaTeléfonoToolStripMenuItem;
     }
 }
