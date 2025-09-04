@@ -42,7 +42,8 @@ namespace Calculadora
 
         private void editorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmEditor editor new frmEditor();
+            frmEditor editor = new frmEditor();
+            editor.Show();
         }
     }
 }

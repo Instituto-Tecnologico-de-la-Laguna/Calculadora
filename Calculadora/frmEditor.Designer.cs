@@ -29,17 +29,22 @@
         private void InitializeComponent()
         {
             this.menuEditor = new System.Windows.Forms.MenuStrip();
-            this.rbtEditor = new System.Windows.Forms.RichTextBox();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.abrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.abrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guardarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guardarComoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imprimirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rtbEditor = new System.Windows.Forms.RichTextBox();
             this.statusNotificacion = new System.Windows.Forms.StatusStrip();
             this.ofdAbrir = new System.Windows.Forms.OpenFileDialog();
             this.sfdGuardar = new System.Windows.Forms.SaveFileDialog();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fuenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cdColor = new System.Windows.Forms.ColorDialog();
+            this.fdFuente = new System.Windows.Forms.FontDialog();
             this.menuEditor.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,21 +53,13 @@
             this.menuEditor.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuEditor.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuEditor.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.archivoToolStripMenuItem});
+            this.archivoToolStripMenuItem,
+            this.editorToolStripMenuItem});
             this.menuEditor.Location = new System.Drawing.Point(0, 0);
             this.menuEditor.Name = "menuEditor";
             this.menuEditor.Size = new System.Drawing.Size(800, 33);
             this.menuEditor.TabIndex = 0;
             this.menuEditor.Text = "menuStrip1";
-            // 
-            // rbtEditor
-            // 
-            this.rbtEditor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rbtEditor.Location = new System.Drawing.Point(0, 33);
-            this.rbtEditor.Name = "rbtEditor";
-            this.rbtEditor.Size = new System.Drawing.Size(800, 417);
-            this.rbtEditor.TabIndex = 1;
-            this.rbtEditor.Text = "";
             // 
             // archivoToolStripMenuItem
             // 
@@ -78,19 +75,19 @@
             this.archivoToolStripMenuItem.Text = "&Archivo";
             this.archivoToolStripMenuItem.Click += new System.EventHandler(this.archivoToolStripMenuItem_Click);
             // 
-            // abrirToolStripMenuItem
-            // 
-            this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
-            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.abrirToolStripMenuItem.Text = "Abrir";
-            this.abrirToolStripMenuItem.Click += new System.EventHandler(this.abrirToolStripMenuItem_Click);
-            // 
             // nuevoToolStripMenuItem
             // 
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
             this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.nuevoToolStripMenuItem.Text = "N&uevo";
             this.nuevoToolStripMenuItem.Click += new System.EventHandler(this.nuevoToolStripMenuItem_Click);
+            // 
+            // abrirToolStripMenuItem
+            // 
+            this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
+            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.abrirToolStripMenuItem.Text = "Abrir";
+            this.abrirToolStripMenuItem.Click += new System.EventHandler(this.abrirToolStripMenuItem_Click);
             // 
             // guardarToolStripMenuItem
             // 
@@ -113,6 +110,22 @@
             this.imprimirToolStripMenuItem.Text = "Imprimir";
             this.imprimirToolStripMenuItem.Click += new System.EventHandler(this.imprimirToolStripMenuItem_Click);
             // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.salirToolStripMenuItem.Text = "&Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
+            // rtbEditor
+            // 
+            this.rtbEditor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtbEditor.Location = new System.Drawing.Point(0, 33);
+            this.rtbEditor.Name = "rtbEditor";
+            this.rtbEditor.Size = new System.Drawing.Size(800, 417);
+            this.rtbEditor.TabIndex = 1;
+            this.rtbEditor.Text = "";
+            // 
             // statusNotificacion
             // 
             this.statusNotificacion.ImageScalingSize = new System.Drawing.Size(24, 24);
@@ -130,12 +143,28 @@
             // 
             this.sfdGuardar.Filter = "Archivos de Texto|*.txt";
             // 
-            // salirToolStripMenuItem
+            // editorToolStripMenuItem
             // 
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.salirToolStripMenuItem.Text = "&Salir";
-            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            this.editorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fuenteToolStripMenuItem,
+            this.colorToolStripMenuItem});
+            this.editorToolStripMenuItem.Name = "editorToolStripMenuItem";
+            this.editorToolStripMenuItem.Size = new System.Drawing.Size(75, 29);
+            this.editorToolStripMenuItem.Text = "Editor";
+            // 
+            // fuenteToolStripMenuItem
+            // 
+            this.fuenteToolStripMenuItem.Name = "fuenteToolStripMenuItem";
+            this.fuenteToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.fuenteToolStripMenuItem.Text = "Fuente";
+            this.fuenteToolStripMenuItem.Click += new System.EventHandler(this.fuenteToolStripMenuItem_Click);
+            // 
+            // colorToolStripMenuItem
+            // 
+            this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
+            this.colorToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.colorToolStripMenuItem.Text = "Color";
+            this.colorToolStripMenuItem.Click += new System.EventHandler(this.colorToolStripMenuItem_Click);
             // 
             // frmEditor
             // 
@@ -143,7 +172,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.statusNotificacion);
-            this.Controls.Add(this.rbtEditor);
+            this.Controls.Add(this.rtbEditor);
             this.Controls.Add(this.menuEditor);
             this.MainMenuStrip = this.menuEditor;
             this.Name = "frmEditor";
@@ -164,10 +193,15 @@
         private System.Windows.Forms.ToolStripMenuItem guardarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem guardarComoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem imprimirToolStripMenuItem;
-        private System.Windows.Forms.RichTextBox rbtEditor;
+        private System.Windows.Forms.RichTextBox rtbEditor;
         private System.Windows.Forms.StatusStrip statusNotificacion;
         private System.Windows.Forms.OpenFileDialog ofdAbrir;
         private System.Windows.Forms.SaveFileDialog sfdGuardar;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fuenteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem colorToolStripMenuItem;
+        private System.Windows.Forms.ColorDialog cdColor;
+        private System.Windows.Forms.FontDialog fdFuente;
     }
 }
