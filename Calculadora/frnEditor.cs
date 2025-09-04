@@ -74,12 +74,22 @@ namespace Calculadora
 
         private void fuenteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            fontDialog1.ShowDialog();
+            if (fontDialog1.ShowDialog() == DialogResult.OK)
+            {
+                // Asignar la fuente elegida al RichTextBox
+                richTextBox1.Font = fontDialog1.Font;
+            }
+
         }
 
         private void colorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            colorDialog1.ShowDialog();
+            // Mostrar el diálogo
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                // Cambiar el color del texto en el RichTextBox
+                richTextBox1.ForeColor = colorDialog1.Color;
+            }
         }
     }
 }
