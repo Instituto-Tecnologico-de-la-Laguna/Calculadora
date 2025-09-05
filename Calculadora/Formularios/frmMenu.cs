@@ -42,8 +42,14 @@ namespace Calculadora
 
         private void editorDeTextoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmEditor editor= new frmEditor();
+            frmEditor editor = new frmEditor();
             editor.Show();
+        }
+
+        private void telefonoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTelefono telefono = new frmTelefono();
+            telefono.Show();
         }
     }
 }
