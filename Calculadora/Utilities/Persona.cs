@@ -13,5 +13,13 @@ namespace Calculadora.Utilities
         public string telefono { get; set; }
         public string correo { get; set; }
         //\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+        public Persona() { }
+
+        public Persona(string nombre, string telefono, string correo)
+        {
+            this.nombre = nombre;
+            this.telefono = telefono;
+            this.correo = correo;
+        }
     }
 }
