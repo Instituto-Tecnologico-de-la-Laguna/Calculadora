@@ -35,6 +35,7 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.sFDBDJason = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -116,6 +117,10 @@
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
+            // sFDBDJason
+            // 
+            this.sFDBDJason.Filter = "Archivo Agenda|*.json ";
+            // 
             // frmAgenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -142,5 +147,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.SaveFileDialog sFDBDJason;
     }
 }
