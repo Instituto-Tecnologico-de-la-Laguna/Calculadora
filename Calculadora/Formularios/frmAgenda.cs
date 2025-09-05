@@ -60,9 +60,9 @@ namespace Calculadora
                 if (fila.IsNewRow) continue;
                 var persona = new Persona();
                 {
-                    persona.nombre = fila.Cells[0].Value?.ToString();
-                    persona.telefono = fila.Cells[1].Value?.ToString();
-                    persona.correo = fila.Cells[2].Value?.ToString();
+                    persona.nombre = fila.Cells[0].Value?.ToString() ?? "";
+                    persona.telefono = fila.Cells[1].Value?.ToString() ?? "";
+                    persona.correo = fila.Cells[2].Value?.ToString() ?? "";
                 }
                 registros.Personas.Add(persona);
             }
