@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -71,5 +72,36 @@ namespace Calculadora
             string json = JsonConvert.SerializeObject(lista, caracteristicas);
             File.WriteAllText(sFDBDJason.FileName, json);   
         }
+
+        private void btnCargar_Click(object sender, EventArgs e)
+        {
+            if(oFDDBJson.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    String json = File.ReadAllText(oFDDBJson.FileName);
+                    var registros = JsonConvert.DeserializeObject<BaseDatosJson>(json);
+                    CargarRegistros(registros);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: "+ex.Message, "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);       
+                }
+
+            }
+        }
+
+        private void CargarRegistros(BaseDatosJson registros)
+        {
+            dGV.Rows.Clear();
+            foreach (var persona in registros.Personas)
+            {
+                dGV.Rows.Add(new object[] { persona.nombre, persona.telefono, persona.correo });
+            }        
+
+            MessageBox.Show("Registros: "+registros.TotalRegistros+"\nUltima actualizacion "+registros.UltimaActualizacion.ToString("dd/mm/yyyy") , "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        
     }
 }

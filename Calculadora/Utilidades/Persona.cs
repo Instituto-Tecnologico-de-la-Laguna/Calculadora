@@ -18,5 +18,10 @@ namespace Calculadora.Utilidades
             this.telefono = telefono;
             this.correo = correo;
         }
+
+        public Persona()
+        {
+
+        }
     }
 }

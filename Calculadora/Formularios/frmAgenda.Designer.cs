@@ -36,6 +36,8 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.sFDBDJason = new System.Windows.Forms.SaveFileDialog();
+            this.btnCargar = new System.Windows.Forms.Button();
+            this.oFDDBJson = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -56,6 +58,7 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.btnCargar);
             this.splitContainer1.Panel2.Controls.Add(this.btnEliminar);
             this.splitContainer1.Panel2.Controls.Add(this.btnGuardar);
             this.splitContainer1.Size = new System.Drawing.Size(1102, 514);
@@ -100,7 +103,7 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(427, 44);
+            this.btnEliminar.Location = new System.Drawing.Point(657, 44);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(112, 50);
             this.btnEliminar.TabIndex = 1;
@@ -109,7 +112,7 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(187, 44);
+            this.btnGuardar.Location = new System.Drawing.Point(273, 44);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(121, 50);
             this.btnGuardar.TabIndex = 0;
@@ -120,6 +123,20 @@
             // sFDBDJason
             // 
             this.sFDBDJason.Filter = "Archivo Agenda|*.json ";
+            // 
+            // btnCargar
+            // 
+            this.btnCargar.Location = new System.Drawing.Point(466, 44);
+            this.btnCargar.Name = "btnCargar";
+            this.btnCargar.Size = new System.Drawing.Size(121, 50);
+            this.btnCargar.TabIndex = 2;
+            this.btnCargar.Text = "CARGAR";
+            this.btnCargar.UseVisualStyleBackColor = true;
+            this.btnCargar.Click += new System.EventHandler(this.btnCargar_Click);
+            // 
+            // oFDDBJson
+            // 
+            this.oFDDBJson.Filter = "Archivo Json|*.Json";
             // 
             // frmAgenda
             // 
@@ -148,5 +165,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.SaveFileDialog sFDBDJason;
+        private System.Windows.Forms.Button btnCargar;
+        private System.Windows.Forms.OpenFileDialog oFDDBJson;
     }
 }
