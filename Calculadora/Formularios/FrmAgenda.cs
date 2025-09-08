@@ -54,5 +54,15 @@ namespace Calculadora
             registros.TotalRegistros = registros.Personas.Count;
             return registros;
         }
+
+        private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
