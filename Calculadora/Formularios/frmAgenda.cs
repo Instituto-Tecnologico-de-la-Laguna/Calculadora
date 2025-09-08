@@ -56,7 +56,7 @@ namespace Calculadora
             return registros;
         }
 
-        private void GuardarJson(BaseDatosJson lista)
+        private void GuardarJson(BaseDatosJson lista)//Guardar
         {
             var caracteristicas = new JsonSerializerSettings
             {
@@ -67,6 +67,36 @@ namespace Calculadora
 
             string json = JsonConvert.SerializeObject(lista, caracteristicas);
             File.WriteAllText(sfdBDJson.FileName, json);
+        }
+
+        private void btnCargar_Click(object sender, EventArgs e)//Cargar
+        {
+            if (ofdBDJson.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    string json = File.ReadAllText(ofdBDJson.FileName);
+                    var registros = JsonConvert.DeserializeObject<BaseDatosJson>(json);
+                    cargarRegistros(registros);
+                    MessageBox.Show("Datos cargados correctamente" +
+                        "\nUltima fecha de modificacion: " + registros.UltimaActualizacion +
+                        "\nNumero de registros: " + registros.TotalRegistros, "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message, "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+        //Funcion para cargar los datos de un archivo JSON al DataGridView
+        private void cargarRegistros(BaseDatosJson registros)
+        {
+            dgvDatos.Rows.Clear();
+            foreach (var persona in registros.personas)
+            {
+                dgvDatos.Rows.Add(persona.nombre, persona.telefono, persona.correo);
+            }
         }
     }
 }
