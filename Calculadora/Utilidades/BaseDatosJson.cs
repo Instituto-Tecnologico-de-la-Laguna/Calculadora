@@ -8,8 +8,9 @@ namespace Calculadora.Utilidades
 {
     public class BaseDatosJson
     {
-        public List<Persona> Personas {  get; set; }
+        public List<Persona> Personas { get; set; }
         public DateTime UltimaActualizacion { get; set; }
+        public int TotalRegistros { get; set; }
 
         public BaseDatosJson()
         {
