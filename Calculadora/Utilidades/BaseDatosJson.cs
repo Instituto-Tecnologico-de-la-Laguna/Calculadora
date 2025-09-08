@@ -10,6 +10,8 @@ namespace Calculadora.Utilidades
     {
         public List<Persona> Personas { get; set; }
         public DateTime UltimaActualizacion { get; set; }
+
+        public int TotalRegistros { get; set; }
         public BaseDatosJson()
         {
             Personas = new List<Persona>();

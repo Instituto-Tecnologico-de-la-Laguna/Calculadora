@@ -33,8 +33,11 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.btnCargar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.sfvBDJson = new System.Windows.Forms.SaveFileDialog();
+            this.ofdDBJson = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -91,15 +94,26 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.btnCargar);
             this.splitContainer1.Panel2.Controls.Add(this.btnEliminar);
             this.splitContainer1.Panel2.Controls.Add(this.btnGuardar);
             this.splitContainer1.Size = new System.Drawing.Size(1091, 508);
             this.splitContainer1.SplitterDistance = 415;
             this.splitContainer1.TabIndex = 0;
             // 
+            // btnCargar
+            // 
+            this.btnCargar.Location = new System.Drawing.Point(519, 21);
+            this.btnCargar.Name = "btnCargar";
+            this.btnCargar.Size = new System.Drawing.Size(130, 42);
+            this.btnCargar.TabIndex = 2;
+            this.btnCargar.Text = "Cargar";
+            this.btnCargar.UseVisualStyleBackColor = true;
+            this.btnCargar.Click += new System.EventHandler(this.btnCargar_Click);
+            // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(538, 21);
+            this.btnEliminar.Location = new System.Drawing.Point(664, 21);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(126, 42);
             this.btnEliminar.TabIndex = 1;
@@ -115,6 +129,14 @@
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // sfvBDJson
+            // 
+            this.sfvBDJson.Filter = "Archivo Agenda|*.json";
+            // 
+            // ofdDBJson
+            // 
+            this.ofdDBJson.Filter = "Archivo Json|*.json";
             // 
             // frmAgenda
             // 
@@ -142,5 +164,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.SaveFileDialog sfvBDJson;
+        private System.Windows.Forms.Button btnCargar;
+        private System.Windows.Forms.OpenFileDialog ofdDBJson;
     }
 }
