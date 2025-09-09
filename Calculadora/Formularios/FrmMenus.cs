@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Calculadora.Formularios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -50,6 +51,12 @@ namespace Calculadora
         {
             FrmAgenda agenda = new FrmAgenda();
             agenda.Show();
+        }
+
+        private void variosComponentesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmVarios varios = new FrmVarios();
+            varios.Show();
         }
     }
 }

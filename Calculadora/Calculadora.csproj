@@ -86,6 +86,12 @@
     <Compile Include="Formularios\FrmTimers.Designer.cs">
       <DependentUpon>FrmTimers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FrmVarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmVarios.Designer.cs">
+      <DependentUpon>FrmVarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilidades\BaseDatosJson.cs" />
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmTimers.resx">
       <DependentUpon>FrmTimers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmVarios.resx">
+      <DependentUpon>FrmVarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

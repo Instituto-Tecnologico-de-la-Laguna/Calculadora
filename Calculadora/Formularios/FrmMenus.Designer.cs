@@ -37,6 +37,7 @@
             this.helloWorldToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editorDeTextoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agendaTelefonoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.variosComponentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,7 +76,8 @@
             this.sumaToolStripMenuItem,
             this.helloWorldToolStripMenuItem,
             this.editorDeTextoToolStripMenuItem,
-            this.agendaTelefonoToolStripMenuItem});
+            this.agendaTelefonoToolStripMenuItem,
+            this.variosComponentesToolStripMenuItem});
             this.appsToolStripMenuItem.Name = "appsToolStripMenuItem";
             this.appsToolStripMenuItem.Size = new System.Drawing.Size(70, 29);
             this.appsToolStripMenuItem.Text = "Apps";
@@ -115,6 +117,13 @@
             this.agendaTelefonoToolStripMenuItem.Text = "Agenda Telefono";
             this.agendaTelefonoToolStripMenuItem.Click += new System.EventHandler(this.agendaTelefonoToolStripMenuItem_Click);
             // 
+            // variosComponentesToolStripMenuItem
+            // 
+            this.variosComponentesToolStripMenuItem.Name = "variosComponentesToolStripMenuItem";
+            this.variosComponentesToolStripMenuItem.Size = new System.Drawing.Size(279, 34);
+            this.variosComponentesToolStripMenuItem.Text = "Varios Componentes";
+            this.variosComponentesToolStripMenuItem.Click += new System.EventHandler(this.variosComponentesToolStripMenuItem_Click);
+            // 
             // FrmMenus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -142,5 +151,6 @@
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editorDeTextoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem agendaTelefonoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem variosComponentesToolStripMenuItem;
     }
 }
