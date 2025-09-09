@@ -37,6 +37,7 @@
             this.helloWorldToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agendaTelefonicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.variosComponentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,7 +76,8 @@
             this.sumaDe2NumerosToolStripMenuItem,
             this.helloWorldToolStripMenuItem,
             this.editorToolStripMenuItem,
-            this.agendaTelefonicaToolStripMenuItem});
+            this.agendaTelefonicaToolStripMenuItem,
+            this.variosComponentesToolStripMenuItem});
             this.appsToolStripMenuItem.Name = "appsToolStripMenuItem";
             this.appsToolStripMenuItem.Size = new System.Drawing.Size(70, 29);
             this.appsToolStripMenuItem.Text = "Apps";
@@ -83,37 +85,44 @@
             // temporizadorToolStripMenuItem
             // 
             this.temporizadorToolStripMenuItem.Name = "temporizadorToolStripMenuItem";
-            this.temporizadorToolStripMenuItem.Size = new System.Drawing.Size(274, 34);
+            this.temporizadorToolStripMenuItem.Size = new System.Drawing.Size(279, 34);
             this.temporizadorToolStripMenuItem.Text = "Temporizador";
             this.temporizadorToolStripMenuItem.Click += new System.EventHandler(this.temporizadorToolStripMenuItem_Click);
             // 
             // sumaDe2NumerosToolStripMenuItem
             // 
             this.sumaDe2NumerosToolStripMenuItem.Name = "sumaDe2NumerosToolStripMenuItem";
-            this.sumaDe2NumerosToolStripMenuItem.Size = new System.Drawing.Size(274, 34);
+            this.sumaDe2NumerosToolStripMenuItem.Size = new System.Drawing.Size(279, 34);
             this.sumaDe2NumerosToolStripMenuItem.Text = "Suma de 2 numeros";
             this.sumaDe2NumerosToolStripMenuItem.Click += new System.EventHandler(this.sumaDe2NumerosToolStripMenuItem_Click);
             // 
             // helloWorldToolStripMenuItem
             // 
             this.helloWorldToolStripMenuItem.Name = "helloWorldToolStripMenuItem";
-            this.helloWorldToolStripMenuItem.Size = new System.Drawing.Size(274, 34);
+            this.helloWorldToolStripMenuItem.Size = new System.Drawing.Size(279, 34);
             this.helloWorldToolStripMenuItem.Text = "Hello World";
             this.helloWorldToolStripMenuItem.Click += new System.EventHandler(this.helloWorldToolStripMenuItem_Click);
             // 
             // editorToolStripMenuItem
             // 
             this.editorToolStripMenuItem.Name = "editorToolStripMenuItem";
-            this.editorToolStripMenuItem.Size = new System.Drawing.Size(274, 34);
+            this.editorToolStripMenuItem.Size = new System.Drawing.Size(279, 34);
             this.editorToolStripMenuItem.Text = "Editor";
             this.editorToolStripMenuItem.Click += new System.EventHandler(this.editorToolStripMenuItem_Click);
             // 
             // agendaTelefonicaToolStripMenuItem
             // 
             this.agendaTelefonicaToolStripMenuItem.Name = "agendaTelefonicaToolStripMenuItem";
-            this.agendaTelefonicaToolStripMenuItem.Size = new System.Drawing.Size(274, 34);
+            this.agendaTelefonicaToolStripMenuItem.Size = new System.Drawing.Size(279, 34);
             this.agendaTelefonicaToolStripMenuItem.Text = "Agenda Telefonica";
             this.agendaTelefonicaToolStripMenuItem.Click += new System.EventHandler(this.agendaTelefonicaToolStripMenuItem_Click);
+            // 
+            // variosComponentesToolStripMenuItem
+            // 
+            this.variosComponentesToolStripMenuItem.Name = "variosComponentesToolStripMenuItem";
+            this.variosComponentesToolStripMenuItem.Size = new System.Drawing.Size(279, 34);
+            this.variosComponentesToolStripMenuItem.Text = "Varios Componentes";
+            this.variosComponentesToolStripMenuItem.Click += new System.EventHandler(this.variosComponentesToolStripMenuItem_Click);
             // 
             // frmMenu
             // 
@@ -142,5 +151,6 @@
         private System.Windows.Forms.ToolStripMenuItem helloWorldToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem agendaTelefonicaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem variosComponentesToolStripMenuItem;
     }
 }
