@@ -25,9 +25,11 @@ namespace Calculadora
             abrir= ofdAbrir.ShowDialog();
             if (abrir == DialogResult.OK)
             {
-               // rtbEditor.LoadFile(ofdAbrir.FileName,RichTextBoxStreamType.PlainText);
-                string texto=File.ReadAllText(ofdAbrir.FileName);
-                rtbEditor.Text = texto;
+                rtbEditor.LoadFile(ofdAbrir.FileName,
+                      RichTextBoxStreamType.PlainText);
+
+                /*string texto=File.ReadAllText(ofdAbrir.FileName);
+                rtbEditor.Text = texto;*/
             }
 
         }
