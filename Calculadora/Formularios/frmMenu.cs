@@ -58,5 +58,11 @@ namespace Calculadora
             frmVarios varios= new frmVarios();
             varios.Show();
         }
+
+        private void hilosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmHilos hilos= new frmHilos(); 
+            hilos.Show();
+        }
     }
 }

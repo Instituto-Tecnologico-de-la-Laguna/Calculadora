@@ -38,6 +38,7 @@
             this.editorDeTextoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agendaTelefonicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.variosComponentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hilosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,7 +78,8 @@
             this.helloWorldToolStripMenuItem,
             this.editorDeTextoToolStripMenuItem,
             this.agendaTelefonicaToolStripMenuItem,
-            this.variosComponentesToolStripMenuItem});
+            this.variosComponentesToolStripMenuItem,
+            this.hilosToolStripMenuItem});
             this.appsToolStripMenuItem.Name = "appsToolStripMenuItem";
             this.appsToolStripMenuItem.Size = new System.Drawing.Size(70, 29);
             this.appsToolStripMenuItem.Text = "Apps";
@@ -85,35 +87,35 @@
             // temporizadorToolStripMenuItem
             // 
             this.temporizadorToolStripMenuItem.Name = "temporizadorToolStripMenuItem";
-            this.temporizadorToolStripMenuItem.Size = new System.Drawing.Size(274, 34);
+            this.temporizadorToolStripMenuItem.Size = new System.Drawing.Size(279, 34);
             this.temporizadorToolStripMenuItem.Text = "Temporizador";
             this.temporizadorToolStripMenuItem.Click += new System.EventHandler(this.temporizadorToolStripMenuItem_Click);
             // 
             // sumaDe2NumerosToolStripMenuItem
             // 
             this.sumaDe2NumerosToolStripMenuItem.Name = "sumaDe2NumerosToolStripMenuItem";
-            this.sumaDe2NumerosToolStripMenuItem.Size = new System.Drawing.Size(274, 34);
+            this.sumaDe2NumerosToolStripMenuItem.Size = new System.Drawing.Size(279, 34);
             this.sumaDe2NumerosToolStripMenuItem.Text = "Suma de 2 numeros";
             this.sumaDe2NumerosToolStripMenuItem.Click += new System.EventHandler(this.sumaDe2NumerosToolStripMenuItem_Click);
             // 
             // helloWorldToolStripMenuItem
             // 
             this.helloWorldToolStripMenuItem.Name = "helloWorldToolStripMenuItem";
-            this.helloWorldToolStripMenuItem.Size = new System.Drawing.Size(274, 34);
+            this.helloWorldToolStripMenuItem.Size = new System.Drawing.Size(279, 34);
             this.helloWorldToolStripMenuItem.Text = "Hello World";
             this.helloWorldToolStripMenuItem.Click += new System.EventHandler(this.helloWorldToolStripMenuItem_Click);
             // 
             // editorDeTextoToolStripMenuItem
             // 
             this.editorDeTextoToolStripMenuItem.Name = "editorDeTextoToolStripMenuItem";
-            this.editorDeTextoToolStripMenuItem.Size = new System.Drawing.Size(274, 34);
+            this.editorDeTextoToolStripMenuItem.Size = new System.Drawing.Size(279, 34);
             this.editorDeTextoToolStripMenuItem.Text = "Editor de Texto";
             this.editorDeTextoToolStripMenuItem.Click += new System.EventHandler(this.editorDeTextoToolStripMenuItem_Click);
             // 
             // agendaTelefonicaToolStripMenuItem
             // 
             this.agendaTelefonicaToolStripMenuItem.Name = "agendaTelefonicaToolStripMenuItem";
-            this.agendaTelefonicaToolStripMenuItem.Size = new System.Drawing.Size(274, 34);
+            this.agendaTelefonicaToolStripMenuItem.Size = new System.Drawing.Size(279, 34);
             this.agendaTelefonicaToolStripMenuItem.Text = "Agenda Telefonica";
             this.agendaTelefonicaToolStripMenuItem.Click += new System.EventHandler(this.agendaTelefonicaToolStripMenuItem_Click);
             // 
@@ -123,6 +125,13 @@
             this.variosComponentesToolStripMenuItem.Size = new System.Drawing.Size(279, 34);
             this.variosComponentesToolStripMenuItem.Text = "Varios Componentes";
             this.variosComponentesToolStripMenuItem.Click += new System.EventHandler(this.variosComponentesToolStripMenuItem_Click);
+            // 
+            // hilosToolStripMenuItem
+            // 
+            this.hilosToolStripMenuItem.Name = "hilosToolStripMenuItem";
+            this.hilosToolStripMenuItem.Size = new System.Drawing.Size(279, 34);
+            this.hilosToolStripMenuItem.Text = "Hilos";
+            this.hilosToolStripMenuItem.Click += new System.EventHandler(this.hilosToolStripMenuItem_Click);
             // 
             // frmMenu
             // 
@@ -152,5 +161,6 @@
         private System.Windows.Forms.ToolStripMenuItem editorDeTextoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem agendaTelefonicaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem variosComponentesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hilosToolStripMenuItem;
     }
 }
