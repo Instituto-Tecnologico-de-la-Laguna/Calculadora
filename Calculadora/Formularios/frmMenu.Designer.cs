@@ -38,6 +38,7 @@
             this.editorDeTextoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agendaTeléfonoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.variosComponentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hilosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,7 +78,8 @@
             this.temporizadorToolStripMenuItem1,
             this.editorDeTextoToolStripMenuItem,
             this.agendaTeléfonoToolStripMenuItem,
-            this.variosComponentesToolStripMenuItem});
+            this.variosComponentesToolStripMenuItem,
+            this.hilosToolStripMenuItem});
             this.calculadoraToolStripMenuItem.Name = "calculadoraToolStripMenuItem";
             this.calculadoraToolStripMenuItem.Size = new System.Drawing.Size(73, 29);
             this.calculadoraToolStripMenuItem.Text = "Menu";
@@ -124,6 +126,13 @@
             this.variosComponentesToolStripMenuItem.Text = "Varios componentes";
             this.variosComponentesToolStripMenuItem.Click += new System.EventHandler(this.variosComponentesToolStripMenuItem_Click);
             // 
+            // hilosToolStripMenuItem
+            // 
+            this.hilosToolStripMenuItem.Name = "hilosToolStripMenuItem";
+            this.hilosToolStripMenuItem.Size = new System.Drawing.Size(276, 34);
+            this.hilosToolStripMenuItem.Text = "Hilos";
+            this.hilosToolStripMenuItem.Click += new System.EventHandler(this.hilosToolStripMenuItem_Click);
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -152,5 +161,6 @@
         private System.Windows.Forms.ToolStripMenuItem editorDeTextoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem agendaTeléfonoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem variosComponentesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hilosToolStripMenuItem;
     }
 }

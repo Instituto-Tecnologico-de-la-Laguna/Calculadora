@@ -59,5 +59,11 @@ namespace Aplicacion2
             FrmVarios varios = new FrmVarios();
             varios.Show();  
         }
+
+        private void hilosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmHilos formHilos = new FrmHilos();    
+            formHilos.Show();   
+        }
     }
 }

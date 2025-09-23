@@ -92,6 +92,12 @@
     <Compile Include="Formularios\FrmVarios.Designer.cs">
       <DependentUpon>FrmVarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FrmHilos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmHilos.Designer.cs">
+      <DependentUpon>FrmHilos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilidades\BaseDatosJson.cs" />
@@ -110,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmEditor.resx">
       <DependentUpon>FrmEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmHilos.resx">
+      <DependentUpon>FrmHilos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
