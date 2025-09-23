@@ -39,6 +39,7 @@
             this.agendaTeléfonoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.variosComponentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hilosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hilos2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,7 +80,8 @@
             this.editorDeTextoToolStripMenuItem,
             this.agendaTeléfonoToolStripMenuItem,
             this.variosComponentesToolStripMenuItem,
-            this.hilosToolStripMenuItem});
+            this.hilosToolStripMenuItem,
+            this.hilos2ToolStripMenuItem});
             this.calculadoraToolStripMenuItem.Name = "calculadoraToolStripMenuItem";
             this.calculadoraToolStripMenuItem.Size = new System.Drawing.Size(73, 29);
             this.calculadoraToolStripMenuItem.Text = "Menu";
@@ -133,6 +135,13 @@
             this.hilosToolStripMenuItem.Text = "Hilos";
             this.hilosToolStripMenuItem.Click += new System.EventHandler(this.hilosToolStripMenuItem_Click);
             // 
+            // hilos2ToolStripMenuItem
+            // 
+            this.hilos2ToolStripMenuItem.Name = "hilos2ToolStripMenuItem";
+            this.hilos2ToolStripMenuItem.Size = new System.Drawing.Size(276, 34);
+            this.hilos2ToolStripMenuItem.Text = "Hilos2";
+            this.hilos2ToolStripMenuItem.Click += new System.EventHandler(this.hilos2ToolStripMenuItem_Click);
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -162,5 +171,6 @@
         private System.Windows.Forms.ToolStripMenuItem agendaTeléfonoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem variosComponentesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hilosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hilos2ToolStripMenuItem;
     }
 }
