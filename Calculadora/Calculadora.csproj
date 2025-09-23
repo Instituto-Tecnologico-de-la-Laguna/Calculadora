@@ -74,6 +74,12 @@
     <Compile Include="Formularios\frmEditor.Designer.cs">
       <DependentUpon>frmEditor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frmHilos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmHilos.Designer.cs">
+      <DependentUpon>frmHilos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmEditor.resx">
       <DependentUpon>frmEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmHilos.resx">
+      <DependentUpon>frmHilos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
