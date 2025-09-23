@@ -64,5 +64,11 @@ namespace Calculadora
             frmHilos hilos= new frmHilos();
             hilos.Show();
         }
+
+        private void hilos2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmHilos2 hilos2= new FrmHilos2();
+            hilos2.Show();
+        }
     }
 }
