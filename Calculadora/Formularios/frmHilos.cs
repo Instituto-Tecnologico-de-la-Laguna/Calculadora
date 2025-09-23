@@ -27,97 +27,35 @@ namespace Calculadora.Formularios
             p2.Start();
         }
 
-        private void cuadro1()
+        public void cuadro1()
         {
-            int r=0, g = 0, b = 255;
             bool bandera = false, bandera2 = false;
+            int r = 0, g = 0, b = 255;
             while (true)
             {
-                
                 Thread.Sleep(10);
-                if (bandera2 == false)
+                if (bandera2 == false) //Suma
                 {
-                    
+
                     if (bandera == false)
                     {
                         r++;
-                        if (r ==255)
-                        {
-                            bandera2 = true;
-                        }
-
-
-                    }
-                    else
-                    {
-                        g++;
-                        if (g == 255)
-                        {
-                            bandera= false;
-                            bandera2 = true;
-                        }
-
-                    }
-
-                }
-                else//resta
-                {
-                    if (bandera==false)
-                    {
-                        r--;
-                        if (r == 0)
+                        if (r == 255)
                         {
                             bandera = true;
                         }
                     }
                     else
                     {
-                        g--;
-                        if (g==0)
-                        {
-                            bandera = false;
-                            bandera2 = false;
-                        }
-                    }
-                }
-                    pb1.BackColor = Color.FromArgb(r, g, b);
-
-            }
-
-        }
-        private void cuadro2()
-        {
-            bool bandera = false, bandera2 = false;
-            int r=255, g=255, b = 255;
-            while (true)
-            {
-                Thread.Sleep(10);
-                if (bandera2 == false)
-                {
-
-                    if (bandera == false)
-                    {
-                        r--;
-                        if (r == 255)
-                        {
-                            bandera2 = true;
-                        }
-
-
-                    }
-                    else
-                    {
-                        g--;
+                        g++;
                         if (g == 255)
                         {
                             bandera = false;
                             bandera2 = true;
                         }
-
                     }
-
                 }
-                else//resta
+                else //Resta
                 {
                     if (bandera == false)
                     {
@@ -137,11 +75,62 @@ namespace Calculadora.Formularios
                         }
                     }
                 }
+                pb1.BackColor = Color.FromArgb(r, g, b);
+
+            }
+        }
+
+        public void cuadro2()
+        {
+            bool bandera = false, bandera2 = false;
+            int r = 255, g = 255, b = 255;
+            while (true)
+            {
+                Thread.Sleep(10);
+                if (bandera2 == false) //Suma
+                {
+
+                    if (bandera == false)
+                    {
+                        r--;
+                        if (r == 0)
+                        {
+                            bandera = true;
+                        }
+                    }
+                    else
+                    {
+                        g--;
+                        if (g == 0)
+                        {
+                            bandera = false;
+                            bandera2 = true;
+                        }
+                    }
+                }
+                else //Resta
+                {
+                    if (bandera == false)
+                    {
+                        r++;
+                        if (r == 255)
+                        {
+                            bandera = true;
+                        }
+                    }
+                    else
+                    {
+                        g++;
+                        if (g == 255)
+                        {
+                            bandera = false;
+                            bandera2 = false;
+                        }
+                    }
+                }
                 pb2.BackColor = Color.FromArgb(r, g, b);
 
             }
-
         }
-
     }
 }
