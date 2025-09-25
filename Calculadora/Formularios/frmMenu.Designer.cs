@@ -37,6 +37,9 @@
             this.helloWorldToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editorDeTextoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.telefonoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.variosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hilosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hilos2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,7 +78,10 @@
             this.sumaDe2NumerosToolStripMenuItem,
             this.helloWorldToolStripMenuItem,
             this.editorDeTextoToolStripMenuItem,
-            this.telefonoToolStripMenuItem});
+            this.telefonoToolStripMenuItem,
+            this.variosToolStripMenuItem,
+            this.hilosToolStripMenuItem,
+            this.hilos2ToolStripMenuItem});
             this.appsToolStripMenuItem.Name = "appsToolStripMenuItem";
             this.appsToolStripMenuItem.Size = new System.Drawing.Size(46, 22);
             this.appsToolStripMenuItem.Text = "Apps";
@@ -115,6 +121,27 @@
             this.telefonoToolStripMenuItem.Text = "Telefono";
             this.telefonoToolStripMenuItem.Click += new System.EventHandler(this.telefonoToolStripMenuItem_Click);
             // 
+            // variosToolStripMenuItem
+            // 
+            this.variosToolStripMenuItem.Name = "variosToolStripMenuItem";
+            this.variosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.variosToolStripMenuItem.Text = "Varios";
+            this.variosToolStripMenuItem.Click += new System.EventHandler(this.variosToolStripMenuItem_Click);
+            // 
+            // hilosToolStripMenuItem
+            // 
+            this.hilosToolStripMenuItem.Name = "hilosToolStripMenuItem";
+            this.hilosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hilosToolStripMenuItem.Text = "Hilos";
+            this.hilosToolStripMenuItem.Click += new System.EventHandler(this.hilosToolStripMenuItem_Click);
+            // 
+            // hilos2ToolStripMenuItem
+            // 
+            this.hilos2ToolStripMenuItem.Name = "hilos2ToolStripMenuItem";
+            this.hilos2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hilos2ToolStripMenuItem.Text = "Hilos2";
+            this.hilos2ToolStripMenuItem.Click += new System.EventHandler(this.hilos2ToolStripMenuItem_Click);
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -122,7 +149,7 @@
             this.ClientSize = new System.Drawing.Size(533, 292);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmMenu";
             this.Text = "Menu de Aplicaciones";
             this.menuStrip1.ResumeLayout(false);
@@ -143,5 +170,8 @@
         private System.Windows.Forms.ToolStripMenuItem helloWorldToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editorDeTextoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem telefonoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem variosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hilosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hilos2ToolStripMenuItem;
     }
 }

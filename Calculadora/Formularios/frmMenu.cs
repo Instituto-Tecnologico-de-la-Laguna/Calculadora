@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Calculadora.Formularios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -50,6 +51,24 @@ namespace Calculadora
         {
             frmTelefono telefono = new frmTelefono();
             telefono.Show();
+        }
+
+        private void variosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmVarios varios = new frmVarios();
+            varios.Show();
+        }
+
+        private void hilosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmHilos hilos = new frmHilos();
+            hilos.Show();
+        }
+
+        private void hilos2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmHilos2 hilos = new frmHilos2();
+            hilos.Show();
         }
     }
 }

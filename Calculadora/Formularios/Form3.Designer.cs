@@ -35,6 +35,9 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.sfdJson = new System.Windows.Forms.SaveFileDialog();
+            this.btnCargar = new System.Windows.Forms.Button();
+            this.ofdDBJson = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -55,6 +58,7 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.btnCargar);
             this.splitContainer1.Panel2.Controls.Add(this.btnEliminar);
             this.splitContainer1.Panel2.Controls.Add(this.btnGuardar);
             this.splitContainer1.Size = new System.Drawing.Size(643, 450);
@@ -93,12 +97,13 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(302, 31);
+            this.btnEliminar.Location = new System.Drawing.Point(398, 31);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(93, 23);
             this.btnEliminar.TabIndex = 1;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnGuardar
             // 
@@ -109,6 +114,25 @@
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // sfdJson
+            // 
+            this.sfdJson.Filter = "Archivo Agenda|*.json";
+            // 
+            // btnCargar
+            // 
+            this.btnCargar.Location = new System.Drawing.Point(293, 31);
+            this.btnCargar.Name = "btnCargar";
+            this.btnCargar.Size = new System.Drawing.Size(90, 23);
+            this.btnCargar.TabIndex = 2;
+            this.btnCargar.Text = "Cargar";
+            this.btnCargar.UseVisualStyleBackColor = true;
+            this.btnCargar.Click += new System.EventHandler(this.btnCargar_Click);
+            // 
+            // ofdDBJson
+            // 
+            this.ofdDBJson.FileName = "openFileDialog1";
+            this.ofdDBJson.Filter = "Archivo Json|*.json";
             // 
             // frmTelefono
             // 
@@ -136,5 +160,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.SaveFileDialog sfdJson;
+        private System.Windows.Forms.Button btnCargar;
+        private System.Windows.Forms.OpenFileDialog ofdDBJson;
     }
 }

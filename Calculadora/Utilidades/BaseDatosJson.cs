@@ -10,7 +10,7 @@ namespace Calculadora.Utilidades
     {
         public List<Persona> Personas {  get; set; }
         public DateTime ultimaActualizacion;
-
+        public int TotalRegistros { get; set; } 
         public BaseDatosJson() { 
             Personas = new List<Persona>();
             ultimaActualizacion = DateTime.Now;
